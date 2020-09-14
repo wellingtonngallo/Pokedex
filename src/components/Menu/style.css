@@ -1,0 +1,14 @@
+.page-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.page-header .header-content {
+    margin-top: 2rem;
+}
+
+.page-header .header-content img{
+    height: 5rem;
+    width: 5rem;
+}
