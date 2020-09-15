@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../../assets/img/pokebola.png';
+import logo from '../../assets/img/ball.svg';
 import './style.css';
 
 export default function Menu() {
