@@ -12,7 +12,6 @@ function Search() {
         event.preventDefault();
         
         api.get(`pokemon/${pokemon}`).then(response => {
-            debugger;
             dispatch({ type: 'SEARCH_POKEMON', data: response.data});
         });
 
@@ -27,10 +26,10 @@ function Search() {
                     placeholder="Buscar pokemon"
                     onChange={e => setPokemon(e.target.value)}
                 />
+                <button type="submit">
+                    Buscar
+                </button>
             </div>
-            <button type="submit">
-                Buscar
-            </button>
         </form>
     )
 }

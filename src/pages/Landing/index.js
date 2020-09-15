@@ -10,6 +10,7 @@ export default function Landing() {
         <>
             <Menu />
             <Search />
+            <div>{pokemon.name}</div>
         </>
     );
 }
