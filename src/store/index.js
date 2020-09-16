@@ -2,7 +2,8 @@ import { createStore } from 'redux';
 
 const INITIAL_STATE = {
     data: {},
-    pokeball: []
+    pokeball: [],
+    loading: false
 };
 
 function pokemon(state = INITIAL_STATE, action) {
