@@ -1,16 +1,13 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './store';
-
+import Routes from './routes';
 import './globals.css';
-import Landing from './pages/Landing';
 
-function App() {
-  return (
-    <Provider store={store}>
-      <Landing />
-    </Provider>
+export default function App() {
+	return (
+    	<Provider store={store}>
+      		<Routes />
+    	</Provider>
   );
 }
-
-export default App;

@@ -1,21 +1,18 @@
-.empty-state {
+.content {
     justify-content: center;
+    margin-top: 2rem;
+}
+
+.empty-state {
     align-items: center;
     display: flex;
     flex-direction: column;
     height: 20rem;
-
+    justify-content: center;
 }
 
 .empty-state p {
-    text-align: center;
     font-size: 1.4rem;
+    text-align: center;
     width: 30rem;
-}
-
-
-.content {
-
-    justify-content: center;
-    margin-top: 2rem;
 }

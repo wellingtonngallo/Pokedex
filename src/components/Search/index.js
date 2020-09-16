@@ -1,20 +1,22 @@
 import React, {useState} from 'react';
 import api from '../../services/api';
 import { useDispatch } from 'react-redux';
-
 import './style.css';
 
-function Search() {
+export default function Search() {
     const [pokemon, setPokemon] = useState('');
     const dispatch = useDispatch();
-
+    
     function search(event) {
         event.preventDefault();
-        
+
+        if (!pokemon) {
+            return;
+        }
+
         api.get(`pokemon/${pokemon}`).then(response => {
             dispatch({ type: 'SEARCH_POKEMON', data: response.data});
         });
-
     }
 
     return (
@@ -31,7 +33,5 @@ function Search() {
                 </button>
             </div>
         </form>
-    )
+    );
 }
-
-export default Search;

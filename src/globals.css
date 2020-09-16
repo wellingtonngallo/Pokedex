@@ -16,3 +16,11 @@ textarea {
     font: 500 1.6rem Poppins;
     color: #000000;
 }
+
+.card-pokemon-content {
+  align-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 4rem;
+}
