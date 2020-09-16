@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import Card from '../../components/Card';
 import Menu from '../../components/Menu';
 import MessageState from '../../components/MessageState';
+import logoEmptyPokeball from '../../assets/img/logoEmptyPokeball.svg'
 
 export default function Pokeball() {
     const pokeball = useSelector(state => state.pokeball);
@@ -11,7 +12,8 @@ export default function Pokeball() {
         if (!pokeball.length) {
             return (
                 <MessageState
-                    message={'Sua busca pokebola está vazia, para adicionar um Pokemon clique no botão e faça uma busca.'}
+                    logo={logoEmptyPokeball}
+                    message={'Sua pokebola está vazia, para adicionar um Pokemon volte para o inicio e faça uma busca.'}
                 />
             )
         }
