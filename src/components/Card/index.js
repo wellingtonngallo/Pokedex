@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useToasts } from 'react-toast-notifications';
-import './style.css';
 import logo from '../../assets/img/pokeball.svg';
+import './style.css';
 
 export default function Card({data}) {
     const [loadImageComplete, setLoadImageComplete] = useState(false);

@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import api from '../../services/api';
 import { useDispatch, useSelector } from 'react-redux';
-import './style.css';
 import { useToasts } from 'react-toast-notifications';
+import './style.css';
 
 export default function Search() {
     const [pokemon, setPokemon] = useState('');
