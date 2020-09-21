@@ -12,3 +12,6 @@
 ## Conclusões sobre a API
 
 * A API do Pokemon é bem interessante, porém um pouco confusa em algumas situações. Mas foi bem interessante de elaborar e desenvolver.
+
+## Deploy
+* É possivel testar o aplicativo pelo link: https://pokedex-ten-chi.vercel.app/
